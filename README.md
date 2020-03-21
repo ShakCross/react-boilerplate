@@ -1,4 +1,4 @@
-# React_Scss-modules_Webpack__Boilerplate 
+# React/Scss-modules/Webpack||Boilerplate 
 
 A simple webpack boilerplate for developing in Frontend in React js.
 
@@ -49,8 +49,7 @@ Inside the newly cloned project, you can run some built-in commands:
 ```sh
 yarn start
 ```
-<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Opens in [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 The page will automatically reload if you make changes to the code.
 
