@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "titulo": "Turistas y pobladora",
+        "desc": "Vive la experiencia de conocer de cerca la esencia del corazón del Perú",
+        "imagen_lg": "src/assets/img/slider1_lg.jpg",
+        "imagen_md": "src/assets/img/slider1_md.jpg",
+        "imagen_xs": "src/assets/img/slider1_xs.jpg",
+        "imagen_tall": "src/assets/img/slider1_tall.jpg",
+        "localia": "Cusco",
+        "url": "https://ytuqueplanes.com/turismo-comunitario/",
+        "alt": "turistas-cusco"
+    },
+    {
+        "id": 2,
+        "titulo": "Turista y llama en Macchu Picchu",
+        "desc": "Descubre quince experiencias fuera de lo común en Machupicchu ",
+        "imagen_lg": "src/assets/img/slider2_lg.jpg",
+        "imagen_md": "src/assets/img/slider2_md.jpg",
+        "imagen_xs": "src/assets/img/slider2_xs.jpg",
+        "imagen_tall": "src/assets/img/slider2_tall.jpg",
+        "localia": "Cusco",
+        "url": "https://www.ytuqueplanes.com/novedades/191_quince-cosas-para-que-disfrutes-al-maximo-tu-visita-a-machupicchu",
+        "alt": "macchu-picchu"
+    },
+    {
+        "id": 3,
+        "titulo": "Rutas Cortas",
+        "desc": "Visita estos destinos con los nuevos mapas interactivos",
+        "imagen_lg": "src/assets/img/slider3_lg.jpg",
+        "imagen_md": "src/assets/img/slider3_md.jpg",
+        "imagen_xs": "src/assets/img/slider3_xs.jpg",
+        "imagen_tall": "src/assets/img/slider3_tall.jpg",
+        "localia": "Lima",
+        "url": "https://www.ytuqueplanes.com/rutas-cortas",
+        "alt": "rutas-cortas"
+    },
+    {
+        "id": 4,
+        "titulo": "Carnaval urbano Andahuaylas",
+        "desc": "Mira aquí la agenda de marzo 2020",
+        "imagen_lg": "src/assets/img/slider4_lg.jpg",
+        "imagen_md": "src/assets/img/slider4_md.jpg",
+        "imagen_xs": "src/assets/img/slider4_xs.jpg",
+        "imagen_tall": "src/assets/img/slider4_tall.jpg",
+        "imagen": "https://www.ytuqueplanes.com/fotos/banners/d-castillo-chancay.jpg",
+        "localia": "Apurímac",
+        "url": "https://www.ytuqueplanes.com/festividades",
+        "alt": "festividades"
+    }
+]
