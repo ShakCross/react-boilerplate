@@ -81,29 +81,15 @@ module.exports = {
 
             },
             {
-                test: /\.(gif|png|jpe?g|svg|webp|ico)$/i,
-                use: [
-                    {
-                      loader: 'file-loader',
-                      options: {
-                        name: '[name].[ext]',
-                        outputPath: 'src/assets/img',
-                      },
-                    }
-                  ]
-            },
-            {
-                test: /\.(otf|ttf)$/i,
-                use: [
-                    {
-                      loader: 'file-loader',
-                      options: {
-                        name: '[name].[ext]',
-                        outputPath: 'src/assets/fonts',
-                      },
-                    }
-                  ]
-            },
+                test: /\.(jpg|png|gif|woff|otf|ttf|svg)/,
+                 use: {
+                     loader: 'url-loader', // this need file-loader
+                     options: {
+                         limit: 50000,
+                         outputPath: 'src/assets/img'
+                     }
+                 }
+            }
         ]
     },
     devServer: {
