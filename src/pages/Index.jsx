@@ -1,10 +1,21 @@
 import React from 'react'
 import Layout from 'components/layout/Layout'
+import Seo from 'components/general/seo/Seo'
 import gif from 'assets/img/main.gif'
 
 const Index = () => {
     return (
         <Layout>
+            <Seo
+                title="Index Page"
+                desc="Index Page"
+                canonical=""
+                ogTitle=""
+                ogDesc=""
+                ogUrl=""
+                ogImage=""
+                hashTag=""
+            />
             <section>
                 <h1
                     style={{
