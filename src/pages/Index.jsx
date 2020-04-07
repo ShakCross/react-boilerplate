@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from 'components/layout/Layout'
 import Seo from 'components/general/seo/Seo'
 import gif from 'assets/img/main.gif'
+import { Default } from 'components/general/task/Task.stories.js'
+import Button from 'components/general/button/Button'
 
 const Index = () => {
     return (
@@ -17,13 +19,9 @@ const Index = () => {
                 hashTag=""
             />
             <section>
-                <h1
-                    style={{
-                        fontFamily: 'BreePeru', fontSize: 19, height: 80, display: 'flex', alignItems: 'center', justifyContent: 'center'
-                    }}
-                >
+                <Button>
                     Reactive frontend doing it right!!
-                </h1>
+                </Button>
                 <img style={{ width: '100%' }} src={gif} />
             </section>
         </Layout>

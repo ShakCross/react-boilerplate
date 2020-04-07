@@ -1,7 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Bree from 'assets/fonts/BreePeru_Regular.otf';
-import ClanOffcBook from 'assets/fonts/ClanOffc-Book.ttf';
 
 const Seo = ({ title, desc, canonical, ogTitle, ogDesc, ogUrl, ogImage, hashTag }) => {
     return (
@@ -26,22 +24,6 @@ const Seo = ({ title, desc, canonical, ogTitle, ogDesc, ogUrl, ogImage, hashTag 
             <link rel="preconnect" href={canonical} rel="canonical"></link>
 
             <title>{title}</title>
-            <style>
-                {`
-                    @font-face {
-                        font-family: 'BreePeru';
-                        src: url('${Bree}');
-                        font-display: swap;
-                    }
-                    
-                    @font-face {
-                        font-family: 'ClanOffcBook';
-                        src: url('${ClanOffcBook}');
-                        font-display: swap;
-                    }
-                `
-                }
-            </style>
         </Helmet>
     )
 }

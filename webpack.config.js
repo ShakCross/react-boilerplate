@@ -32,7 +32,6 @@ module.exports = {
                         loader: "sass-loader",
                         options: {
                             sourceMap: isDevelopment,
-                            prependData: '@import "src/styles/variables.scss", "src/styles/mixins.scss";',
                             sassOptions: {
                                 includePaths: [path.resolve(__dirname, 'src/styles')]
                             }

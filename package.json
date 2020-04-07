@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6000",
     "build-storybook": "build-storybook"
   },
   "author": "André Santa Cruz Chirinos",
@@ -34,6 +34,7 @@
     "@storybook/addons": "^5.3.17",
     "@storybook/react": "^5.3.17",
     "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.7",
     "browserslist": "^4.8.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",

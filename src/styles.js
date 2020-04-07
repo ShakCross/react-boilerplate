@@ -1,3 +1,128 @@
+import { createGlobalStyle } from 'styled-components'
+import Bree from 'assets/fonts/BreePeru_Regular.otf';
+import ClanOffcBook from 'assets/fonts/ClanOffc-Book.ttf';
+
+
+export const ThemeStyles = {
+    
+/* Variables
+========================================================================== */
+    white: '#ffffff',
+    black: '#000000',
+    dark_grey: '#636363',
+    grey: '#adafaf',
+    transparent_grey: 'rgba(0, 0, 0, 0.5)',
+    transparent_dark_grey: 'rgba(215, 215, 215, 0.5)',
+    dark_yellow: '#f0b127',
+    yellow: '#fed118',
+    pink: '#990564',
+    purple: '#811063',
+    dark_blue: '#2b2b6f',
+    sky_blue: '#3ba8fc',
+    blue: '#0e70b9',
+    pale_green: '#33aba0',
+    pale_blue: '#1496a9',
+    green: '#84c131',
+    red: '#e13b3d',
+    default_background: '#f9f9f9',
+    default_background_t: 'rgba(255, 255, 255, 0.8)',
+    xsDevice: `@media (max-width: 576px)`,
+    smDevice: `@media (max-width: 768px)`,
+    mdDevice: `@media (max-width: 992px)`,
+    lgDevice: `@media (max-width: 1200px)`,
+    xlgDevice: `@media (min-width: 1201px)`
+} 
+
+export const GlobalStyles = createGlobalStyle`
+
+/* Fonts styles
+========================================================================== */
+
+@font-face {
+    font-family: 'BreePeru';
+    src: url('${Bree}');
+    font-display: swap;
+}
+    
+@font-face {
+    font-family: 'ClanOffcBook';
+    src: url('${ClanOffcBook}');
+    font-display: swap;
+}
+
+/* Scroll styles
+========================================================================== */
+::-webkit-scrollbar {
+	width: 10px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: rgba(52, 171, 160, 0.8);
+}
+
+/* Default styles
+========================================================================== */
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: '';
+    clear: both;
+    height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    width: auto;
+    display: block;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -81,7 +206,7 @@ textarea {
 }
 
 /**
- * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * Correct inline-block display not defined in IE 6/7/8/9 and Firefox 3.
  */
 
 audio,
@@ -94,7 +219,7 @@ video {
 }
 
 /**
- * Prevent modern browsers from displaying `audio` without controls.
+ * Prevent modern browsers from displaying audio without controls.
  * Remove excess height in iOS 5 devices.
  */
 
@@ -113,8 +238,8 @@ audio:not([controls]) {
 }
 
 /**
- * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
- *    `em` units.
+ * 1. Correct text resizing oddly in IE 6/7 when body font-size is set using
+ *    em units.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
@@ -126,7 +251,7 @@ html {
 }
 
 /**
- * Address `outline` inconsistency between Chrome and other browsers.
+ * Address outline inconsistency between Chrome and other browsers.
  */
 
  a:focus {
@@ -142,7 +267,7 @@ a:hover {
 }
 
 /**
- * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 1. Remove border when inside a element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
 
@@ -208,7 +333,7 @@ textarea {
 }
 
 /**
- * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * Address Firefox 3+ setting line-height on input using !important in
  * the UA stylesheet.
  */
 
@@ -218,10 +343,10 @@ input {
 }
 
 /**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
+ * Address inconsistent text-transform inheritance for button and select.
+ * All other form control elements do not inherit text-transform values.
+ * Correct button style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct select style inheritance in Firefox 4+ and Opera.
  */
 
 button,
@@ -230,11 +355,11 @@ select {
 }
 
 /**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native audio
+ *    and video controls.
+ * 2. Correct inability to style clickable input types in iOS.
  * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
+ *    input and others.
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
@@ -273,9 +398,9 @@ input[type="radio"] {
 }
 
 /**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
+ * 1. Address appearance set to searchfield in Safari 5 and Chrome.
+ * 2. Address box-sizing set to border-box in Safari 5 and Chrome
+ *    (include -moz to future-proof).
  */
 
 input[type="search"] {
@@ -363,3 +488,4 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+`;

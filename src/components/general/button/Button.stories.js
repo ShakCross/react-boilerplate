@@ -2,34 +2,27 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, object } from '@storybook/addon-knobs/react';
 
-
-import Task from './Task';
-import Footer from 'components/footer/Footer';
+import StyledButton from 'components/general/button/Button'
 
 export default {
-  component: Task,
-  title: 'Task',
+  component: Button,
+  title: 'Button',
   decorators: [withKnobs],
   excludeStories: /.*Data$/,
 };
 
-export const taskData = {
-  id: '1',
-  title: 'Test Task',
-  state: 'TASK_INBOX',
-  updatedAt: new Date(2018, 0, 1, 9, 0),
+export const buttonData = {
+  primary: true,
 };
 
-export const actionsData = {
-  onPinTask: action('onPinTask'),
-  onArchiveTask: action('onArchiveTask'),
+export const buttonActions = {
+  clicked: action('clicked'),
 };
 
-export const Default = () => 
+export const DefaultButton = () => 
      
 (    <div>
-      <Task task={object('task', { ...taskData })} {...actionsData} />
-      <Footer/>
+      <StyledButton data={object('data', { ...buttonData })} {...buttonActions} />
     </div> )
     
  
